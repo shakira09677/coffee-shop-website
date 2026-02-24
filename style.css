@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5EFE6;
+    color: #333;
+}
+
+header {
+    background: url("coffee\ image.jpg") center/cover no-repeat; /* your image */
+    content: "";
+    position: relative;
+    height: 90vh;                 /* Adjust header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    inset: 0;
+    z-index: 2;    
+    transform: scale(1.05);        /* prevents edges showing after blur */
+    z-index: 1;  
+    position: relative;
+   
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin: 0;
+  
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #C6A75E;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    max-width: 250px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.menu-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #4B2E2B;
+    color: white;
+    padding: 20px;
+}
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.menu-card h3 {
+    margin: 10px 0 5px 0;
+}
+
+.menu-card p {
+    margin: 5px 0;
+}
+
+.menu-card .price {
+    font-weight: bold;
+    color: #4B2E2B;
+    margin-top: 10px;
+}
+html{
+    scroll-behavior: Smooth;
+}
+.btn {
+    padding: 12px 25px;
+    background-color: #C6A75E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+}
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between images */
+    flex-wrap: wrap; /* wrap on smaller screens */
+    margin-top: 30px;
+}
+
+.about-images img {
+    width: 250px; /* fixed width */
+    height: 200px; /* fixed height */
+    object-fit: cover; /* crops image nicely without distortion */
+    border-radius: 10px; /* rounded corners for style */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* subtle shadow */
+    transition: transform 0.3s;
+}
+
+.about-images img:hover {
+    transform: scale(1.05); /* subtle zoom on hover */
+}
+@media (max-width: 768px) {
+    .about-images img {
+        width: 45%; /* two images per row on tablet */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-images img {
+        width: 90%; /* one image per row on mobile */
+        height: auto;
+    }
+}
